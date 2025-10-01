@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# 📝 Minhas Tarefas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação web para gerenciamento de tarefas pessoais, desenvolvida com React, TypeScript e Redux Toolkit.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+- ✅ **Criar tarefas** com título, descrição e prioridade
+- 📝 **Editar tarefas** existentes
+- ✅ **Marcar como concluída** ou pendente
+- 🗑️ **Remover tarefas**
+- 🔍 **Buscar tarefas** por título
+- 🏷️ **Filtrar por status** (pendente/concluída)
+- 🎯 **Filtrar por prioridade** (urgente/importante/normal)
+- 📱 **Interface responsiva**
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**
+- **TypeScript**
+- **Redux Toolkit**
+- **React Router DOM**
+- **Styled Components**
+- **ESLint + Prettier**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Estrutura do Projeto
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── BotaoAdicionar/
+│   ├── FiltroCard/
+│   └── Tarefa/
+├── containers/
+│   ├── BarraLateral/
+│   ├── Formulario/
+│   └── ListaDeTarefas/
+├── models/
+│   └── Tarefa.ts
+├── pages/
+│   ├── Cadastro/
+│   └── Home/
+├── store/
+│   ├── index.ts
+│   └── reducers/
+├── styles/
+└── utils/
+    └── enums/
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏃‍♂️ Como Executar
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- npm ou yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o repositório**
+   ```bash
+   git clone [url-do-repositorio]
+   cd minhas-tarefas
+   ```
 
-### `npm run eject`
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. **Execute a aplicação**
+   ```bash
+   npm start
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Abra no navegador**
+   ```
+   http://localhost:3000
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📋 Scripts Disponíveis
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start` - Executa a aplicação em modo de desenvolvimento
+- `npm test` - Executa os testes
+- `npm run build` - Constrói a aplicação para produção
+- `npm run eject` - Ejeta a configuração do Create React App
